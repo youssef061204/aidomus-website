@@ -3,16 +3,32 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center text-center bg-gradient-to-br from-blue-50 to-blue-100 pt-20">
+    <section
+      id="hero"
+      className="relative min-h-screen flex items-center justify-center text-center"
+    >
+      {/* Optional overlay tint (light fade effect) */}
+      <div className="absolute inset-0"></div>
+
+      {/* Content */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="max-w-3xl px-4"
+        transition={{ duration: 0.8 }}
+        className="relative z-10 max-w-3xl px-4"
       >
-        <h1 className="text-5xl font-extrabold text-blue-800 mb-4">AI Automation for Real Estate Professionals</h1>
-        <p className="text-lg text-gray-700 mb-6">Boost efficiency, streamline workflows, and grow your business with Aidomus – your AI-powered automation partner.</p>
-        <a href="#contact" className="inline-block bg-blue-600 text-white px-6 py-3 rounded-xl shadow-md hover:bg-blue-700 transition">Get Started</a>
+        <h1 className="text-5xl md:text-6xl font-extrabold text-white mb-4">
+          Automate Your Real Estate with AI
+        </h1>
+        <p className="text-lg md:text-xl text-white/80 mb-6">
+          Boost efficiency, streamline workflows, and grow your business with Aidomus – your AI-powered automation partner.
+        </p>
+        <a
+          href="#contact"
+          className="inline-block bg-[var(--highlight-color)]-600 text-white px-8 py-4 rounded-xl shadow-lg hover:bg-[var(--highlight-color)] transition"
+        >
+          Get Started
+        </a>
       </motion.div>
     </section>
   );

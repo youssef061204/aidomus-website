@@ -12,7 +12,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-white">
+    <section id="services" className="py-20">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -20,7 +20,7 @@ const Services = () => {
         viewport={{ once: true }}
         className="max-w-6xl mx-auto px-4 text-center"
       >
-        <h2 className="text-3xl font-bold text-gray-800 mb-12">What We Automate</h2>
+        <h2 className="text-3xl font-bold text-white mb-12">What We Automate</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {items.map((service, index) => (
             <motion.div
@@ -29,10 +29,10 @@ const Services = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1, duration: 0.4 }}
               viewport={{ once: true }}
-              className="bg-blue-50 rounded-2xl p-6 shadow hover:shadow-lg transition"
+              className="rounded-2xl p-6 backdrop-blur-md bg-white/5 text-left border border-transparent hover:border-white/20 transition duration-300 shadow hover:shadow-lg"
             >
-              <h3 className="text-xl font-semibold text-blue-700 mb-2">{service.title}</h3>
-              <p className="text-gray-600 text-sm">{service.desc}</p>
+              <h3 className="text-xl font-semibold text-[var(--highlight-color)]-300 mb-2">{service.title}</h3>
+              <p className="text-white text-sm">{service.desc}</p>
             </motion.div>
           ))}
         </div>
