@@ -14,7 +14,7 @@ const Navbar = () => {
       <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo + Brand */}
         <div className="flex items-center space-x-3">
-          <img src={logo} alt="Aidomus Logo" className="h-8 w-8 object-contain" />
+          <img src={logo} alt="Aidomus Logo" className="h-12 w-12 object-contain" />
           <span className="text-white text-xl font-bold tracking-wide">AIDOMUS</span>
         </div>
 

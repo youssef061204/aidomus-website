@@ -2,7 +2,8 @@
 
 /* Define the gradient background and highlight color as variables */
 :root {
-  --primary-bg: linear-gradient(35deg,rgba(0, 0, 0, 1) 0%, rgba(43, 43, 38, 1) 81%, rgba(71, 71, 59, 1) 100%);
+  --primary-bg: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(30, 32, 33, 1) 70%, rgba(50, 51, 59, 1) 100%);
+
   --highlight-color: rgba(139, 139, 139, 0.132);
 
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -21,11 +22,11 @@
 
 a {
   font-weight: 500;
-  color: #c6ad08;
+  color: #3df0dd;
   text-decoration: inherit;
 }
 a:hover {
-  color: #c6ad08;
+  color: #3df0dd;
 }
 
 body {
@@ -56,7 +57,7 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #c6ad08;
+  border-color: #3df0dd;
 }
 button:focus,
 button:focus-visible {
@@ -65,10 +66,10 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #c6ad08;
+    color: #3df0dd;
   }
   a:hover {
-    color: #c6ad08;
+    color: #3df0dd;
   }
   button {
     background-color: #f9f9f9;

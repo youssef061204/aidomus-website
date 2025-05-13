@@ -1,14 +1,29 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import logo from '../assets/logo.png';
 
 const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center text-center"
+      className="relative min-h-screen flex items-center justify-center text-center overflow-hidden"
     >
-      {/* Optional overlay tint (light fade effect) */}
-      <div className="absolute inset-0"></div>
+      {/* Animated background logo */}
+      <motion.div
+        className="absolute inset-0 z-0 flex items-center justify-center pointer-events-none"
+        animate={{ scale: [1, 1.05, 1] }}
+        transition={{
+          duration: 8,
+          repeat: Infinity,
+          ease: "easeInOut"
+        }}
+      >
+        <img
+          src={logo}
+          alt="Background Logo"
+          className="w-96 opacity-10"
+        />
+      </motion.div>
 
       {/* Content */}
       <motion.div
